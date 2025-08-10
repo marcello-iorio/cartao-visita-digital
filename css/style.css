@@ -92,6 +92,25 @@ h2 {
     /* Adiciona uma sombra para dar profundidade */
 }
 
+/* No seu style.css, modifique o estilo do rodapé que tínhamos antes */
+.redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 25px; /* Espaço entre os ícones */
+    margin: 20px 0;
+}
 
+.redes-sociais a {
+    color: var(--cor-texto); /* Cor padrão dos ícones */
+    font-size: 24px; /* Aumenta o tamanho dos ícones */
+    transition: all 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: var(--cor-destaque);
+    transform: scale(1.2);
+}
 
 
