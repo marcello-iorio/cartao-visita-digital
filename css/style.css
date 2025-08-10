@@ -13,3 +13,20 @@ body {
     object-fit: cover; /* Garante que a foto preencha o círculo sem distorcer */
 }
 
+.cartao {
+    background-color: #333; /* Uma cor de fundo para o cartão,um pouco mais clara que o body */
+    max-width: 700 px; /* O cartão terá no máximo 700px de largura */
+    margin: 50px auto; /* 50px de margem em cima/baixo e 'auto' nas laterais para centralizá-lo na página */
+    padding: 30px; /* 30px de espaçamento INTERNO, para o conteúdo não grudar nas bordas */
+    border-radius: 15px; /* Deixa os cantos do cartão arredondados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0 ,2); /* Adiciona uma sombra para dar profundidade */
+}
+
+footer ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    display: flex; /* A MÁGICA ACONTECE AQUI */
+    justify-content: center; /* Centraliza os items horizontalmente */
+    gap: 20px; /* Cria um espaço de 20px entre os links */
+}
+
