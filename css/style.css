@@ -38,7 +38,6 @@ footer ul {
 footer a {
     color: #eee;
     text-decoration: underline; /* Remove a cor que fica no link depois de já ter clicado nele" */
-
 }
 
 footer a:hover {
