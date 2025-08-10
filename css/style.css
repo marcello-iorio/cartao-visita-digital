@@ -1,48 +1,97 @@
-body {
-    background-color: #222; /* Um fundo cinza bem escuro */
-    color: #eee; /* Uma cor de texto cinza bem claro */
-    font-family: 'Roboto', sans-serif; /* Fonte padrão para todo o site */
-    /* Mantenha as outras proriedades do body */
-    text-align: center; /* Centraliza todo o texto da página */
+:root {
+    --cor-fundo: #222;
+    --cor-cartao: #333;
+    --cor-texto: #eee;
+    --cor-destaque: #00a8ff;
+    --cor-sombra: rgba(0, 0, 0, 0.2);
 }
 
-h1,h2 {
-    font-family: 'Montserrat',sans-serif; /* Fonte especial para todos os títulos */
+body {
+    background-color: var(--cor-fundo);
+    /* Um fundo cinza bem escuro */
+    color: var(--cor-texto);
+    /* Uma cor de texto cinza bem claro */
+    font-family: 'Roboto', sans-serif;
+    /* Fonte padrão para todo o site */
+    /* Mantenha as outras proriedades do body */
+    text-align: center;
+    /* Centraliza todo o texto da página */
 }
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    /* Fonte especial para todos os títulos */
+}
+
+.container-grid {
+    display: grid; /* Ativamos o modo Grid! */
+    grid-template-columns: 1fr 2fr; /* Define 2 colunas. A 2ª tem o dobro da largura da 1ª */
+    gap: 30px; /*Espaço entre as colunas e linhas do grid */
+    padding: 30px; /* Um espaçamento geral na página */
+    max-width: 1200px; /* Limita a largura máxima da página */
+    margin: auto; /* Centraliza o container na tela */
+}
+
+/* Estilo para TODOS os cartões */
+.perfil-card, .info-card {
+    background-color: var(--cor-cartao);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--cor-sombra);
+}
+
+/* Ajustes no cartão de perfil (coluna da esquerda) */
+.perfil-card {
+    text-align: center;
+}
+
+.botao-cv {
+    display: block; /* Faz o link ocupar a largura toda */
+    background-color: var(--cor-destaque);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px; /* Espaço acima do botão */
+    transition: transform 0.2s ease;
+}
+
+.botao-cv:hover {
+    transform: scale(1.05);
+}
+
+
 
 .foto-perfil {
-    width: 200px; /* Define a largura da imagem */
-    height: 200px; /* Define a altura da imagem */
-    border-radius: 50%; /* A mágica para transformar a imagem em um círculo */
-    border: 5px solid #00a8ff; /* Adiciona uma borda azul ao redor da foto */
-    object-fit: cover; /* Garante que a foto preencha o círculo sem distorcer */
+    width: 200px;
+    /* Define a largura da imagem */
+    height: 200px;
+    /* Define a altura da imagem */
+    border-radius: 50%;
+    /* A mágica para transformar a imagem em um círculo */
+    border: 5px solid var(--cor-destaque);
+    /* Adiciona uma borda azul ao redor da foto */
+    object-fit: cover;
+    /* Garante que a foto preencha o círculo sem distorcer */
 }
 
 .cartao {
-    background-color: #333; /* Uma cor de fundo para o cartão,um pouco mais clara que o body */
-    max-width: 700 px; /* O cartão terá no máximo 700px de largura */
-    margin: 50px auto; /* 50px de margem em cima/baixo e 'auto' nas laterais para centralizá-lo na página */
-    padding: 30px; /* 30px de espaçamento INTERNO, para o conteúdo não grudar nas bordas */
-    border-radius: 15px; /* Deixa os cantos do cartão arredondados */
-    box-shadow: 0 10px 20px rgba(0, 0, 0 ,2); /* Adiciona uma sombra para dar profundidade */
+    background-color: var(--cor-fundo);
+    /* Uma cor de fundo para o cartão,um pouco mais clara que o body */
+    max-width: 700 px;
+    /* O cartão terá no máximo 700px de largura */
+    margin: 50px auto;
+    /* 50px de margem em cima/baixo e 'auto' nas laterais para centralizá-lo na página */
+    padding: 30px;
+    /* 30px de espaçamento INTERNO, para o conteúdo não grudar nas bordas */
+    border-radius: 15px;
+    /* Deixa os cantos do cartão arredondados */
+    box-shadow: 0 10px 20px var(--cor-sombra);
+    /* Adiciona uma sombra para dar profundidade */
 }
 
-footer ul {
-    list-style: none; /* Remove as bolinhas da lista */
-    padding: 0; /* Remove o padding padrão da lista */
-    display: flex; /* A MÁGICA ACONTECE AQUI */
-    justify-content: center; /* Centraliza os items horizontalmente */
-    gap: 20px; /* Cria um espaço de 20px entre os links */
-}
 
-footer a {
-    color: #eee;
-    text-decoration: underline; /* Remove a cor que fica no link depois de já ter clicado nele" */
-}
 
-footer a:hover {
-    color: #00a8ff; /* O link fica azul ao passar o mouse */
-    transform: scale(1.1); /* Aumenta um pouco o tamanho do link */
-    transition: all 0.3s ease; /* Cria uma animação suave para o efeito */
-}
 

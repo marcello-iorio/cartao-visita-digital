@@ -8,23 +8,54 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
 
-    
+
 </head>
 
 
 
 <body>
-    <div class="cartao">
-        <header>
-            <img class="foto-perfil" src="imagens/profilepicture.jpg" alt="Foto de Marcello Iorio">
-            <h1>Marcello Iorio</h1>
-            <p>Desenvolvedor Fullstack | PHP (Laravel | Phalcon) | Vue.js | Python | Mysql </p>
-        </header>
+    <div class="container-grid">
+        <aside class="perfil-card">
+            <header>
+                <img src="imagens/profilepicture.jpg" alt="Foto de Marcello" class="foto-perfil">
+                <h1>Marcello Iorio</h1>
+                <p>Desenvolvedor Fullstack | PHP (Laravel | Phalcon) | Vue.js | Python | Mysql </p>
+            </header>
 
-        <main>
-            <section>
+            <section class="redes-sociais">
+                <h2>Minhas redes</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/marcello-iorio-96825679/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/marcello-iorio" target="_blank">Github</a></li>
+                </ul>
+                <p>&copy; 2025 - Todos os direitos reservados.</p>
+            </section>
+
+            <section class="tecnologias">
+                <h2>Tecnologias</h2>
+                <ul>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Phalcon</li>
+                    <li>Vue.js</li>
+                    <li>Mysql</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+
+            <footer>
+                <a href="#" class="botao-cv">Download CV</a>
+            </footer>
+
+            </section>
+        </aside>
+
+        <main class="conteudo-principal">
+            <section class="info-card sobre-mim">
                 <h2>Sobre Mim</h2>
                 <p>
                     Sou desenvolvedor Web com sólida experiência desde 2013, especializado na criação e otimização de
@@ -37,35 +68,12 @@
                     processos.
                 </p>
             </section>
-            <h2>Minhas habilidades</h2>
-            <ul>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>Phalcon</li>
-                <li>Vue.js</li>
-                <li>Mysql</li>
-                <li>Python</li>
-            </ul>
-            <section>
-
-                <section>
-                    <h2>Meus projetos</h2>
-                    <p>Em breve ...</p>
-                </section>
-
+            <section class="info-card projetos">
+                <h2>Projetos</h2>
+                <p>Em breve, meus projetos aparecerão aqui!</p>
             </section>
-
-            <footer>
-                <h2>Minhas redes</h2>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/marcello-iorio-96825679/" target="_blank">Linkedin</a></li>
-                    <li><a href="https://github.com/marcello-iorio" target="_blank">Github</a></li>
-                </ul>
-                <p>&copy; 2025 - Todos os direitos reservados.</p>
-            </footer>
         </main>
     </div>
-
 </body>
 
 </html>
