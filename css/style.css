@@ -1,8 +1,13 @@
 body {
     background-color: #222; /* Um fundo cinza bem escuro */
     color: #eee; /* Uma cor de texto cinza bem claro */
-    font-family: Arial, sans-serif; /* Uma fonte mais moderna que a padrão */
+    font-family: 'Roboto', sans-serif; /* Fonte padrão para todo o site */
+    /* Mantenha as outras proriedades do body */
     text-align: center; /* Centraliza todo o texto da página */
+}
+
+h1,h2 {
+    font-family: 'Montserrat',sans-serif; /* Fonte especial para todos os títulos */
 }
 
 .foto-perfil {
@@ -28,5 +33,17 @@ footer ul {
     display: flex; /* A MÁGICA ACONTECE AQUI */
     justify-content: center; /* Centraliza os items horizontalmente */
     gap: 20px; /* Cria um espaço de 20px entre os links */
+}
+
+footer a {
+    color: #eee;
+    text-decoration: underline; /* Remove a cor que fica no link depois de já ter clicado nele" */
+
+}
+
+footer a:hover {
+    color: #00a8ff; /* O link fica azul ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho do link */
+    transition: all 0.3s ease; /* Cria uma animação suave para o efeito */
 }
 
